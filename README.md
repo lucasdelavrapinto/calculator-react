@@ -6,3 +6,4 @@
 npm start
 ```
 
+![alt text](calc_react.png)
