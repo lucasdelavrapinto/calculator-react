@@ -18,12 +18,10 @@ const App = () => {
   function calcular(expression) {
     //tranformar , para .
     expression = expression.replace(/,/g, ".");
-    console.log(expression);
 
     try {
       // eslint-disable-next-line no-eval
       let result = evaluateExpression(expression);
-      console.log(result);
       setExpressao(String(result));
     } catch (error) {
       console.log(String(error));
@@ -56,7 +54,6 @@ const App = () => {
   function alterarValor(string) {
     if (contemOperadores(string)) {
       if (string.startsWith("-")) {
-        console.log("string.startsWith('-')");
         setExpressao(string.slice(1));
       }
     } else{
